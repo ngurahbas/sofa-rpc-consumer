@@ -35,7 +35,7 @@ public class ExampleConsumerTest extends junit.framework.TestCase {
         input.setParam1("awesome");
         input.setParam2("awesome");
 
-        AnotherDummyObject output = exampleConsumer.handleUnfinishedMethod(input);
+        AnotherDummyObject output = exampleConsumer.consumeAnotherMethod(input);
 
         Assert.assertNotNull(output);
     }
